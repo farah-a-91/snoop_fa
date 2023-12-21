@@ -48,8 +48,7 @@ CREATE TABLE transactions (
     categoryId INT,
     currency VARCHAR(3),
     amount DECIMAL(10, 2),
-    description TEXT,
-    CONSTRAINT fk_customer FOREIGN KEY (customerId) REFERENCES customers(customerId)
+    description TEXT
 );
 
 CREATE TABLE error_logs (
